@@ -1,104 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
-    Write your CSS here 
-    Gap Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
-
-    For dimensions, see dimensions.png image.
-    HINT: Remember you can't change the properties of grid lines.
-    But grid lines are transparent!
-    */
-    *{
-      margin: 0;
-      padding: 0;
-    }
-    
-    body{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .grid-container{
-      height: 748px;
-      width: 748px;
-      display:grid;
-      grid-template-rows:412px 130px 155px 22px;
-      grid-template-columns:320px 198px 153px 50px;
-      column-gap: 9px;
-      row-gap: 9px;
-      background-color: #000;
-    }
-
-    .red{
-      background-color:#E72F24;
-    }
-    .white{
-      background-color: #F0F1EC;
-      grid-column: span 3;
-    }
-    .third{
-      background-color: #F0F1EC;
-      grid-row: span 2;
-    }
-    .fourth{
-      background-color: #F0F1EC;
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-    .whitess{
-      background-color: #F0F1EC;
-      grid-row: span 2;
-    }
-    .blue{
-      background-color:#004592;
-      grid-area: -4/-1/-3/-2;
-      border-bottom: 10px solid black;
-    }
-    .white-below{
-      background-color: #F0F1EC;
-    }
-    .yellow{
-      background-color:#F9D01E ;
-    }
-    .black{
-      background-color:#232629 ;
-    }
-
-
-
-
-
-
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zainab Tijani's Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <!-- Write your HTML here -->
-   <div class="grid-container">
-    <div class="item red"></div>
-    <div class="white"></div>
-    <div class="third"></div>
-    <div class="fourth"></div>
-    <div class="whitess"></div>
-    <div class="blue"></div>
-    <div class="white-below"></div>
-    <div class="yellow"></div>
-    <div class="black"></div>
-   </div>
-</body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+   
+    <section class="hero">
+        <h1>Hi, I'm <span class="nab">Zainab</span>  Tijani</h1>
+        <h2>An aspiring Full stack web developer</h2>
+    </section>
 
+    <section id="About">
+        <div class="wrapper">
+            <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I'm an aspiring full stack web developer with a growing passion for building clean, responsive, and user-friendly websites. 
+                    I’ve completed my learning in HTML, CSS, and Bootstrap, 
+                    and I’m currently expanding my skills in web development by diving deeper into JavaScript and other modern technologies.
+                
+                    I enjoy turning ideas into real-world web experiences and constantly challenge myself to learn and improve.
+                    My goal is to become a full-stack developer and contribute to building impactful digital solutions.
+                
+                    When I’m not coding, I love exploring new tech trends, solving problems, and finding inspiration from great design.</p>
+            </div>
+            <div class="profile">
+                    <img src="./images/snapme.jpg" alt="my image" height="400">
+            </div>
+        </div>
+            
+    </section>
+
+    <section id="Projects">
+        <div class="card-h2"><h2>Past Projects</h2></div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./images/tindog.png" alt="tindog website image" height="200">
+                    <div class="card-content">
+                        <h3>Tindog Website</h3>
+                        <p>Course project to build a dog matching website using Bootstrap.</p>
+                        <button class="btn"><a href="../11.3 TinDog Project/index.html">Check the site here</a></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/agencyweb.png" alt="agency website image" height="200">
+                    <div class="card-content">
+                        <h3>Agency Website</h3>
+                        <p>Course project to build a creative design agency website using HTML and CSS.</p>
+                        <button class="btn"><a href="../8.4 Web Design Agency Project/">Check the site here</a></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/Mondrian.png" alt="mondrian painting image" height="200">
+                    <div class="card-content">
+                        <h3>Mondrian Painting</h3>
+                        <p>Course project to build a mondrian painting to assess my understanding of CSS grid.</p>
+                        <button class="btn"><a href="../10.3 Mondrian Project/index.html">Check the site here</a></button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <footer id="Contact">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://x.com/zainabcodes" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/zainabtechy" target="_blank">
+                 <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/zainab-tijani-a1319823b/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+
+            <div class="btn">
+                <button><a href="mailto:thezainabdigital@gmail.com">Email</a></button>
+                <button><a href="https://wa.link/0ewbyl">Whatsapp</a></button>
+            </div>
+         <p style> &copy; Zainab Tijani. All rights reserved.</p>           
+        </div>      
+    </footer>
+</body>
 </html>
