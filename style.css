@@ -15,6 +15,14 @@ a{
 .navbar{
     background-color: #010038;
     color: whitesmoke;
+    animation-name: navbar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes navbar{
+    from{background-color: #010038;}
+    to{background-color: rgb(161, 14, 105);}
 }
 .navbar ul{
     list-style-type: none;
@@ -23,7 +31,7 @@ a{
     padding: 40px;
 }
 .navbar ul li{
-    margin: 0 10px;
+    margin: 0 13px;
 }
 .navbar ul li a{
     color: whitesmoke;
@@ -32,7 +40,7 @@ a{
     text-decoration: underline;
 }
 .nab{
-    color:mediumvioletred;
+    color:rgb(246, 53, 175);
 }
 .hero{
     height: 50vh;
@@ -59,7 +67,7 @@ a{
     vertical-align: middl;
 }
 
-.wrapper{
+.about-wrapper{
     padding: 0 15px;
     display: flex;
     flex-wrap: wrap;
@@ -74,18 +82,21 @@ a{
     flex: 1;
 }
 .about-content h2{
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-family: 'Cinzel Decorative',cursive;
 }
 .about-content p{
     line-height: 2rem;
     font-size: 18px;
     margin-top: 10px;
     text-align: justify;
+    font-family: serif;
 }
 .card-h2{
     text-align: center;
     font-size: 1.3rem;
+    font-family: 'Cinzel Decorative', cursive;
 }
 .card-container{
     display: flex;
@@ -109,13 +120,15 @@ a{
     padding: 16px;
 }
 .card-content h3{
-    font-size: 26px;
+    font-size: 20px;
     margin-bottom: 1rem;
 }
 .card-content p{
     font-size: 15px;
     line-height: 1.5rem;
     margin-bottom: 8px;
+    font-family:serif;
+    font-weight: normal;
 }
 .card-content .btn{
     padding: 8px;
@@ -132,8 +145,7 @@ a{
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 .footer-container .social-icons{
     padding: 10px;
@@ -169,6 +181,13 @@ a{
 .hero h2{
     padding: 10px;
     font-size: 16px;
+}
+.about-content h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.card-h2{
+    font-size: 1rem;
 }
 
 }
