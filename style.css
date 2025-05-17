@@ -14,7 +14,6 @@ a{
 }
 .navbar{
     background-color: #010038;
-    color: whitesmoke;
     animation-name: navbar;
     animation-duration: 4s;
     animation-iteration-count: infinite;
